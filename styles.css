@@ -1,0 +1,152 @@
+
+body{
+    display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+}
+html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002447;
+    width: 100%;
+}
+.header h1{
+    margin-left: 50px;
+    color: #feb249;
+        font-family: "Lobster", sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-style: normal;
+      
+      
+}
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:20px;
+    margin-right:50px;
+}
+.login button{
+    background-color:#feb249;
+    width: 80px;
+    height:30px;
+    border-radius: 20px;
+    color:darkblue;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.login button:hover{
+    background-color:blanchedalmond;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    background-color:#53d3d1;
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+}
+.nav h2{
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nav h2:hover{
+    color:brown;
+}
+.explore{
+
+    width: 100%;
+    text-align: center;
+}
+.explore h1{
+    font-family: "DM Serif Display", serif;
+    font-weight: 600;
+    font-style: italic;
+    font-weight: bolder;
+    color:brown;  
+    letter-spacing: 2px;
+}
+.e {
+    flex-grow: 1;
+    padding-top: 20px;
+    background-color: #fbeceb;
+    width: 100%;
+}
+
+
+.search{
+    
+    width:100%;
+}
+.search,.s1,.s2{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+width: 100%;
+}
+.search select{
+    width: 230px;
+    height: 40px;
+    padding:5px;
+    border-radius: 10px;
+    border:2px solid;
+    background-color:#53d3d1;
+    color:#002447;
+    font-weight: bolder;
+    font-size:medium;
+    border:none;
+}
+.t{
+    color:green;
+    font-size:x-large;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.se {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px; 
+    padding-bottom: 10px;/* Add margin-top to create space between the search inputs and the button */
+}
+
+.se button {
+    display: inline-block;
+    width: 200px; /* Set width to auto so it only takes the necessary space */
+    height: 50px;
+    line-height: 40px; /* Center text vertically */
+    border-radius: 30px;
+    background-color: #002447;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 0 20px; /* Adjust padding for better appearance */
+    cursor: pointer;
+    border: none;
+    margin: 0; /* Remove default margin */
+}
+.se button:hover{
+    background-color: brown;
+}
+
