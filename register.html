@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="register.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+</head>
+<body>
+    <div class="sec">
+        <div class="right">
+            <h1>Welcome Back!</h1>
+            <p style="text-align: justify;">To keep connected with us please login with your personal info</p>
+            <button><a href="login.html">SIGN IN</a></button>
+        </div>
+        <div class="left">
+            <div class="remain">
+                <h1>Create Account</h1>
+                <div class="content">
+                    <div class="one">
+                        <input type="email" id="email" placeholder="Email" required/>
+                        <input type="password" id="password" placeholder="Password" />
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password"/>
+                    </div>
+                    <div class="one">
+                        <input type="number" id="phone" placeholder="Phone"/>
+                        <select id="selectFruit" name="college">
+                            <option value="TCE">TCE</option>
+                            <option value="KEC">KEC</option>
+                            <option value="MIT">MIT</option>
+                            <option value="CEG">CEG</option>
+                        </select>
+                        <input type="date" id="dob" placeholder="Date Of Birth" required/>
+                    </div>
+                </div>
+                <button type="button" onclick="checkAge()">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkAge() {
+            // Get input values
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const phone = document.getElementById('phone').value;
+            const college = document.getElementById('selectFruit').value;
+            const dob = document.getElementById('dob').value;
+
+            // Validate input values (add more validation as needed)
+            if (!email || !password || !confirmPassword || !phone || !college || !dob) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Calculate age
+            const today = new Date();
+            const dobDate = new Date(dob);
+            const age = today.getFullYear() - dobDate.getFullYear();
+            if(password!=confirmPassword){
+                alert("password and confirm password dismatch!")
+            }
+            else{
+            // Redirect to another page if age is greater than 18
+            if (age > 18) {
+                // Encode input values as URL parameters and pass them to the next page
+                const queryParams = `?email=${encodeURIComponent(email)}&password=${encodeURIComponent(password)}&phone=${encodeURIComponent(phone)}&college=${encodeURIComponent(college)}&dob=${encodeURIComponent(dob)}`;
+                window.location.href = 'result.html' + queryParams;
+            } else {
+                alert('You must be 18 or older to proceed.');
+            }
+        }
+            
+        }
+    </script>
+</body>
+</html>

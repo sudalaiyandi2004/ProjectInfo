@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:url(r.png);
+    background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+}
+.sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 80%;
+    
+    background-color:lightblue;
+    box-shadow: 0px 0px 3px 3px lightblue;
+}
+.left{
+    width: 70%;
+    height: 100%;
+    background:url(g.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+}
+.left h1{
+    color: white;
+}
+.remain{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    border-radius: 10px;
+}
+.remain input,select,button{
+    margin-top:20px;
+    width: 300px;
+    height: 40px;
+    padding-left: 5px;
+    background:none;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white;
+
+}
+input::placeholder{
+    color: white;
+}
+.remain button{
+    background-color: black;
+    color: white;
+    border: none;
+    margin-top: 50px;
+}
+
+.head{
+    position:absolute;
+    top: 2%;
+    left: 2%;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.right button:hover,.left button:hover{
+    background-color: white;
+    color: black;
+}
+.right button{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.right h1,.left h1{
+    font-size: 6vh;
+}
+.right p{
+    font-size: larger;
+    width: 70%;
+    color: brown;
+    font-weight: bold;
+}
+.right p,button{
+    margin-top: 50px;
+}

@@ -10,16 +10,35 @@ body {
             background-position: center;
             background-repeat: no-repeat;
 }
+.ar{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+
+}
+.ar a:hover{
+    color: brown;
+}
 .des{
     text-align: left;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items:flex-start;
     justify-content:center;
     width: 50%;
+    margin-left: 50px;
+}
+.des h1{
+    color: brown;
+    font-family: "Lobster", sans-serif;
+        font-weight: 400;
+        font-size:6vh;
+        letter-spacing: 2px;
+        font-style:normal;
 }
 .head {
     text-align: center;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
